@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HERE AND NOW AI - Patient No-Show Predictor</title>
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/hereandnowai/images/refs/heads/main/logos/favicon-logo-with-name.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --brand-primary: #FFDF00;
+      --brand-secondary: #004040;
+      --brand-primary-hover: #ffe733; /* Slightly lighter yellow */
+      --brand-secondary-hover: #005050; /* Slightly darker/richer teal */
+      --brand-text-on-primary: #000000; /* Black text on yellow */
+      --brand-text-on-secondary: #FFFFFF; /* White text on dark teal */
+      --brand-card-bg: #003535; /* Slightly lighter than secondary for cards */
+    }
+
+    /* Custom scrollbar for better aesthetics */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: rgba(0,0,0,0.1); /* Dark, subtle track */
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--brand-primary);
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--brand-primary-hover);
+    }
+    body {
+      background-color: var(--brand-secondary);
+      color: var(--brand-text-on-secondary);
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "recharts": "https://esm.sh/recharts@^3.0.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.6.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-[var(--brand-secondary)] text-[var(--brand-text-on-secondary)]">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
